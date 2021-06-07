@@ -65,9 +65,6 @@ const imageInlineSizeLimit = parseInt(
 // Check if TypeScript is setup
 const useTypeScript = fs.existsSync(paths.appTsConfig);
 
-// Check if eslint is enabled, default to true
-const isEslintEnabled = !process.env.DISABLE_ESLINT || !process.argv.includes('-disable_eslint');
-
 // Get the path to the uncompiled service worker (if it exists).
 const swSrc = paths.swSrc;
 
